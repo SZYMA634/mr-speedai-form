@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. SpeedAI Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      class="form-container"
+      action="https://formspree.io/f/xzzagkrk"
+      method="POST"
+    >
+      <!-- hidden fields -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Mr. SpeedAI Survey Submission"
+      />
+      <input type="text" name="_gotcha" style="display: none" />
+      <!-- spam trap -->
+
+      <!-- Mascot -->
+      <div class="logo">
+        <img src="/images/mr.speedai.png" alt="Mr. SpeedAI" />
+      </div>
+
+      <!-- Name + Email -->
+      <div class="two-col">
+        <div class="input-field">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Question 01 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">01</span>
+          Which of the following best describes how you currently use AI tools
+          (e.g. ChatGPT, Midjourney, Notion AI)?
+        </label>
+        <select name="AI Usage" required>
+          <option value="">Select</option>
+          <option>I don’t use any AI tools</option>
+          <option>I’ve tested a few out, but don’t use them regularly</option>
+          <option>I use AI tools occasionally for small tasks</option>
+          <option>I use AI tools regularly as part of my workflow</option>
+          <option>My business has integrated AI into key operations</option>
+        </select>
+      </div>
+
+      <!-- Question 02 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">02</span>
+          How familiar are you with the following tools/platforms?
+        </label>
+        <p class="note"><em>(Select all that apply)</em></p>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="Tools[]" value="Google Workspace" />
+            Google Workspace (Docs, Sheets, Gmail, etc.)</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="Excel/Sheets" /> Excel
+            or Google Sheets (formulas, filters, etc.)</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="Project Mgmt" />
+            Project management tools (Trello, Asana, ClickUp, Notion)</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="CRM" /> CRM systems
+            (HubSpot, Salesforce, etc.)</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="Email Marketing" />
+            Email marketing tools (Mailchimp, ConvertKit, etc.)</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="Zapier" /> Zapier or
+            other automation tools</label
+          >
+          <label
+            ><input type="checkbox" name="Tools[]" value="None" /> None of the
+            above</label
+          >
+        </div>
+      </div>
+
+      <!-- Question 03 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">03</span>
+          How do you currently manage your business contacts and leads?
+        </label>
+        <select name="Contact Management" required>
+          <option value="">Select</option>
+          <option>I don’t really have a system</option>
+          <option>I use a basic spreadsheet</option>
+          <option>I use a CRM, but not very actively</option>
+          <option>I actively use a CRM and track all contacts</option>
+          <option>My team manages this for me</option>
+        </select>
+      </div>
+
+      <!-- Question 04 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">04</span>
+          When you need to learn a new tool or system, what best describes your
+          approach?
+        </label>
+        <select name="Learning Approach" required>
+          <option value="">Select</option>
+          <option>I avoid it unless absolutely necessary</option>
+          <option>I prefer to have someone walk me through it</option>
+          <option>I research things and try to figure it out myself</option>
+          <option>I enjoy experimenting and learning by doing</option>
+        </select>
+      </div>
+
+      <!-- Question 05 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">05</span>
+          Do any of these currently create bottlenecks in your day-to-day work?
+        </label>
+        <p class="note"><em>(Select all that apply)</em></p>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="Bottlenecks[]"
+              value="Repetitive admin"
+            />
+            Repetitive admin tasks</label
+          >
+          <label
+            ><input type="checkbox" name="Bottlenecks[]" value="Data entry" />
+            Manual data entry</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Bottlenecks[]"
+              value="Scattered comms"
+            />
+            Scattered communication with leads/clients</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Bottlenecks[]"
+              value="Lack of clarity"
+            />
+            Lack of clarity on who's doing what</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Bottlenecks[]"
+              value="Too many tools"
+            />
+            Managing too many different tools</label
+          >
+          <label
+            ><input type="checkbox" name="Bottlenecks[]" value="None" /> None of
+            the above</label
+          >
+        </div>
+      </div>
+
+      <!-- Question 06 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">06</span>
+          When it comes to adopting new systems or improving your current setup,
+          which best describes you?
+        </label>
+        <select name="Improvement Approach" required>
+          <option value="">Select</option>
+          <option>I’m hesitant and usually wait until things break</option>
+          <option>
+            I know we need improvements, but I’m not sure where to start
+          </option>
+          <option>I’m open to change if it’s clearly explained</option>
+          <option>I’m actively looking for better tools and systems</option>
+          <option>
+            I’ve already optimised most areas and just need expert input
+          </option>
+        </select>
+      </div>
+
+      <!-- Question 07 -->
+      <div class="question-block">
+        <label class="question-label"
+          ><span class="num">07</span>
+          Which of these tasks regularly take up more time than you'd like?
+        </label>
+        <p class="note"><em>(Select all that apply)</em></p>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Writing" />
+            Writing emails, documents, or reports</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Researching" />
+            Researching ideas, strategies, or competitors</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Content" />
+            Creating content (social, blog, etc.)</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Summarising" />
+            Summarising meetings, notes, or transcripts</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Client queries" />
+            Responding to repetitive client queries</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="Organising" />
+            Organising data or information</label
+          >
+          <label
+            ><input type="checkbox" name="TimeTasks[]" value="None" /> None of
+            these apply</label
+          >
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
